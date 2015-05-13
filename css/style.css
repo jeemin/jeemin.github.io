@@ -1,0 +1,225 @@
+html,
+body {
+  height: 100%;
+  background-color: #ddd;
+  font-family: "Open Sans";
+}
+html .overlay,
+body .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.hide {
+  display: none;
+}
+.location {
+  float: right;
+  color: #222;
+}
+.date {
+  float: right;
+  color: #808080;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container,
+.container.widthIncrease,
+.container.widthIncrease .content,
+.container.widthIncrease .sidebar,
+.header,
+.header.reduce .overlay,
+.header.reduce,
+.header.reduce .overlay h1,
+.header .overlay,
+.sidebar,
+.content {
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+.container {
+  width: 700px;
+  height: 650px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #000;
+}
+.container.widthIncrease {
+  width: 1000px;
+}
+.container.widthIncrease .content,
+.container.widthIncrease .sidebar {
+  height: 100%;
+}
+.container.widthIncrease .content {
+  overflow-y: scroll;
+}
+.container .header {
+  font-family: "Pontano Sans";
+  text-transform: uppercase;
+  width: 100%;
+  height: 200px;
+  background-color: #222222;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+.container .header.reduce .overlay,
+.container .header.reduce {
+  height: 80px;
+}
+.container .header.reduce .overlay h1 {
+  margin-top: 30px;
+}
+.container .header.reduce img {
+  opacity: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+.container .header:not(.reduce) img {
+  z-index: -1;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+.container .header .overlay {
+  width: 100%;
+  height: 220px;
+  background-color: rgba(34, 34, 34, 0.65);
+}
+.container .header .overlay h1 {
+  color: #fff;
+  letter-spacing: 9px;
+  margin-top: 50px;
+  font-size: 35px;
+}
+.container .header .overlay h1 span {
+  color: #ffffff;
+}
+.container .header .overlay label {
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+.container .header img {
+  height: 200px;
+  border-radius: 50%;
+}
+.container .sidebar {
+  list-style: none;
+  width: 13%;
+  height: 430px;
+  background-color: #333333;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-family: "Open Sans";
+  letter-spacing: 2px;
+}
+.container .sidebar li {
+  transition: 0.1s;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0 30px 0;
+  border-bottom: 1px solid #4d4d4d;
+  cursor: pointer;
+  color: #808080;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.container .sidebar li:first-child {
+  border-top: 1px solid #4d4d4d;
+}
+.container .sidebar li:hover {
+  background-color: #4d4d4d;
+  transition: 0.1s;
+}
+.container .sidebar li i {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+.container .content {
+  width: 87%;
+  height: 430px;
+  background-color: #ffffff;
+  float: right;
+}
+.container .content > section {
+  padding: 30px;
+  line-height: 23px;
+  font-size: 13px;
+}
+.container .content h2,
+.container .content h3 {
+  margin: 0;
+  padding: 10px 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.container .content ul {
+  list-style: none;
+  padding: 0 0 0 15px;
+  margin: 10px 0 25px 0;
+  border-left: 1px solid #333;
+}
+.container .content ul a {
+  color: #1a1a1a;
+}
+.container .content .education p {
+  color: #4d4d4d;
+  font-size: 11px;
+  font-style: italic;
+}
+.container .content .resume h3 {
+  padding: 15px 0 15px 0;
+}
+.container .content .resume h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+.container .content .resume h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+.container .content .resume .left {
+  width: 70%;
+  display: inline-block;
+}
+.container .content .resume .left section {
+  padding: 0 10px 0 0;
+}
+.container .content .resume .right {
+  width: 30%;
+  float: right;
+}
+.container .content .resume .right ul {
+  border: none;
+  margin: 0;
+}
+.container .content .resume .right ul li {
+  margin-bottom: 20px;
+}
+.container .content .resume .right ul li label {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
