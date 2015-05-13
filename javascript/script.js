@@ -42,8 +42,8 @@ function renderResume() {
         setTimeout(function() {
             $('.resume').removeClass('hide');
         	inTransition = false;
-        }, 1000);
-    }, 1000);
+        }, 500);
+    }, 500);
 }
 
 function unrenderResume($widget) {
@@ -53,6 +53,6 @@ function unrenderResume($widget) {
         setTimeout(function() {
             $widget.removeClass('hide');
         	inTransition = false;
-        }, 1000);
-    }, 1000);
+        }, 500);
+    }, 500);
 }
